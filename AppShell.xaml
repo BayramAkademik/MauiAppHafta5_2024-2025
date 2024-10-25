@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiAppHafta5.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiAppHafta5"
+    Shell.FlyoutBehavior="Flyout"
+    Title="MauiAppHafta5">
+
+    <ShellContent
+        Title="Yapılacaklar"
+        ContentTemplate="{DataTemplate local:ToDoList}"
+        Route="ToDoList" />
+    
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+
+</Shell>
